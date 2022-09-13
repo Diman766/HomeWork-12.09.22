@@ -15,16 +15,31 @@
 // }
 
 
+// Console.WriteLine("Введите число A");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число B");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(DegreeNumber(a, b));
+
+// double DegreeNumber(int number, int deg)
+// {
+//     double result = Math.Pow(number, deg);
+//     return result;
+// }
+
+// Почему функция Math.Pow отказывается работать с int типом????
+
+
+
+
 Console.WriteLine("Введите число A");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B");
 int b = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(DegreeNumber(a, b));
+DegreeNumber(a, b);
 
-double DegreeNumber(int number, int deg)
+void DegreeNumber(int number, int deg)
 {
-    double result = Math.Pow(number, deg);
-    return result;
-}
+    Console.WriteLine(Math.Pow(number, deg));
 
-// Почему функция Math.Pow отказывается работать с int типом????
+}
